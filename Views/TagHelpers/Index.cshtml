@@ -1,0 +1,34 @@
+﻿
+
+
+
+
+
+<div class="card">
+    <div class="card-header">
+        <h5>Anchor tag in asp.net core</h5>
+        <a asp-controller="Home" asp-action="AllEmployees">content</a>
+    </div>
+    <div class="card-body">
+        <h5>Description</h5>
+        It's mainly used to make url maping in anchor tag which makes our url on the basis of controller and action name + parameter etc..
+    </div>
+
+</div>
+
+
+<div class="card">
+    <div class="card-header">
+        <h5>Form tag in asp.net core</h5>
+        <form asp-action="create" asp-controller="TagHelpers" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input @*asp-for="name of parameter"*@ />
+            <span @*asp-validation-for=" Parameter name "*@ class="text-danger"></span>
+
+        </form>
+    </div>
+    <div class="card-body">
+        <h5>Description</h5>
+        This is combination of form input box and many input type directly generate threw it's model type.
+    </div>
+</div>
